@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: red;
+    color:BLACK;
+    padding: 15px;
+}
+nav{
+    display: flex;
+    background-color: black;
+    padding: 20px 30px 20px 30px;
+    justify-content: space-evenly;
+    gap:7px;
+}
+nav b{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-center{
+    display: flex;
+}
+.contenedor-noticias{
+    display:flex;
+    flex-direction: column;
+    max-width: 70%;
+    padding: 0px 10px 0px 20px;
+    text-align: left;
+}
+.Noticias{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.Noticia{
+    border: 2px solid rgb(105, 101, 101);
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+}
+.Noticia img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.Barra-lateral{
+    width: 30%;
+    background-color:black;
+    padding:20px;
+    color: white;
+}
+
+.ultimasnoticias{
+    text-align: left;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    gap:10px;
+}
+
+.redes-sociales{
+    display: flex;
+    align-items: center;
+    gap:40px ;
+}
+
+.redes-sociales a{
+    color: white;
+    text-decoration: none;
+}
+.redes-sociales i{
+    font-size: 19px;
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+}
+
+

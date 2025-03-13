@@ -1,0 +1,270 @@
+/* Reset básico */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Estilos generales del header */
+/*header {
+    background: #f5f5f5;
+    padding: 15px;
+    text-align: center;
+}*/
+
+header {
+    display: flex;
+    height: 25%;
+    align-items: center;
+    /*background-color: #888;*/
+}
+
+.logo {
+    margin-left: 2%;
+    width:24%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.contenedor-arriba{
+    
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 72%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-titulo{
+    
+    height: 90px;
+    display: flex;
+    padding-left: 200px;
+    padding-bottom:10px ;
+    align-items: center;
+}
+
+
+.contenedor-titulo p{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contenedor-titulo i{
+    margin-left: 15px;
+    font-size: 60px;
+}
+
+.contenedor-login {
+    margin-left: 250px;
+    height: 90px;
+    width: 180px;
+    display:flex;
+    align-items:center;
+    
+}
+
+.contenedor-login button{
+    margin-left:15px;
+    height: 30%;
+    padding: 2px 15px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.contenedor-login a{
+    border: none;
+    text-decoration: none;
+}
+
+
+.contenedor-noticias{
+    display: flex;
+    border: 2px solid black;
+    height: 50%;
+    padding: 10px 0px 10px 10px;
+    text-align: center ;
+    border-radius: 4px;
+}
+
+.cuadro-noticia{
+    border: 2px solid black;
+    height: 47px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.barra-busqueda{
+    display:flex;
+    margin-left: 30px;
+    margin-top:10px;
+    width: 200px;
+    height: 28px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.barra-busqueda input{
+    display:flex;
+    padding:4px;
+    outline: none;
+    border:none;
+    width:140px ;
+}
+.barra-busqueda i{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.Azul{ background-color: rgb(115, 159, 241);}
+
+.contenedor-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* ===== PUBLICIDAD ===== */
+.publicidad {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.publicidad img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* ===== INFORMACIÓN GENERAL ===== */
+.general-info {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgb(115, 159, 241);
+}
+footer{
+    background-color: #888;
+    height: 30px;
+    border: 1px solid black;
+}
+/*centro del login*/
+
+.login-container,
+.register-container {
+    display: flex;
+    padding: 30px;
+    height: 130vh;
+}
+
+.login-publicidad,
+.register-publicidad {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.login-publicidad img,
+.register-publicidad img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} 
+
+.login-formulario-container,
+.login-formulario{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(115, 159, 241);
+    margin: auto;
+}
+.login-formulario-container{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    height: 95.5%;
+}
+
+.login-register,
+.register-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.login-register a, .register-login a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.login-register button, .register-login button {
+    background-color: rgb(115, 159, 241);
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+.login-formulario h2, .register-formulario h2 {
+    margin: 30px auto;
+}
+
+.login-formulario input, .register-formulario input {
+    padding: 5px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.login-formulario a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.login-formulario button, .register-formulario button {
+    background-color: rgb(115, 159, 241);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.register-formulario-container,
+.register-formulario {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.register-formulario-container{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    height: 95.5%;
+}

@@ -1,0 +1,130 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sección-superior {
+    display: flex;
+    gap: 10px;
+}
+
+.cuadrado {
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.rectangulo {
+    width: 50px;
+    height: 40px;
+    border: 2px solid black;
+}
+
+.circulo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.circulo-pequeno {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.rojo { background-color: rgb(248, 67, 67); }
+.verde { background-color: rgb(88, 218, 88); }
+.purpura { background-color: purple; }
+.azul { background-color: rgb(93, 93, 173); }
+.cian { background-color: cyan; }
+.cafe { background-color: brown; }
+.amarillo { background-color: rgb(248, 248, 57); }
+.naranja{ background-color: rgb(255, 102, 0); }
+.rosado{ background-color: rgb(218, 17, 124);}
+
+.sección-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangulo-naranja {
+    margin-top: 10px;
+    width: 100px;
+    height: 160px;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centro {
+    margin: 22px 20px 22px 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.cuadro-anidado {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(119, 198, 224);
+    position: relative;
+}
+
+.cuadro-anidado::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 110px;
+    height: 110px;
+    background-color: rgb(88, 218, 88);
+}
+
+.cuadro-anidado::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(248, 67, 67);
+}
+
+
+.sección-inferior {
+    display: flex;
+    gap: 12px;
+}
+
+.rotar45 {
+    transform: rotate(45deg);
+}
+.rotar30 {
+    transform: rotate(30deg);
+}
+
+.redondear-esquinasopuestasizquierda{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.redondear-esquinasopuestasderecha{
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.redondear-esquinas{
+    border-radius: 10px;
+}

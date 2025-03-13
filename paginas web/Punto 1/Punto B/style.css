@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+header {
+    width: 60%;
+    background-color: #222;
+    padding: 15px;
+}
+
+nav {
+    margin: 5px 30px 5px 30px;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.nav-cuadradopequeno {
+    flex:1;
+    width: 10px;
+    height: 30px;
+    background-color: white;
+}
+.nav-cuadradogrande {
+    flex:2;
+    width: 10px;
+    height: 30px;
+    background-color: white;
+}
+
+.contenido {
+    display: flex;
+    max-width: 100%;
+}
+
+.centro {
+    margin: 10px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 3;
+}
+
+.cuadro-centro {
+    margin-left: 30px;
+    width: 230px;
+    height: 230px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.barra-lectura {
+    position: relative;
+    margin-left: 10px;
+    width: 250px;
+    height: 450px;
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+}
+.rayas-difuminadas {
+    position: absolute;
+    top: 25px;  /* Alinea con el perfil */
+    right: 120px; /* Se ubican a la izquierda del perfil */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+    
+}
+
+.raya {
+    width: 50px;
+    height: 15px;
+    background-color: #c44;
+    margin: 0 0 10px 0;
+    
+}
+
+/* Efecto difuminado en las líneas */
+.raya:nth-child(1) {
+    opacity: 0.7;
+    width: 150px;
+}
+
+.raya:nth-child(2) {
+    opacity: 0.5;
+    width: 130px;
+}
+
+.raya:nth-child(3) {
+    opacity: 0.3;
+    width: 110px;
+}
+.circulo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.texto {
+    height: 10px;
+    background-color: #c44;
+    
+}
+
+.largo {
+    width: 100%;
+}
+.mediolargo {
+    width: 75%;
+}
+.mediano {
+    width: 50%;
+}
+
+.corto {
+    width: 15%;
+}
+
+.verde {
+    background-color: #4caf50;
+}
+
+.amarillo {
+    background-color: #f4c542;
+}
+
